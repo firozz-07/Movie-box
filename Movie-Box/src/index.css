@@ -2,32 +2,57 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 160px;
+}
 .img img {
-    width: 150px;
+    width: 160px;
     height: 200px;
+
 }
 .rating{
     display: flex;
     margin-top: 10px;
+    padding-left: 5px;
 }
 .rating i{
     color: yellow;
-    font-size: 20px;
+    font-size: 16px;
 }
 .rating p{
-    font-size: 20px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: white;
 }
 .outer-Div{
-    border:2px solid black;
-    width: 150px;
-    background-color: #C7DBEF ;
-    border-radius: 15px;
+    width:160px;
+    background-color:#1a1a1a ;
     margin-top: 0;
+   
+
 }
 .info{
     margin-top: 10px;
+    padding-left: 5px;
 }
 .info h1{
-    font-size:22px;
+    font-size:18px;
     font-weight: 500;
+    color: white;
+}
+.trailer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: white;
+   padding-bottom: 10px;
+ 
+}
+.i{
+    font-size: 20px;
 }

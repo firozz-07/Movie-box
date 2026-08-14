@@ -1,20 +1,34 @@
 function Moviebox() {
   return (
     <>
-    <div className="outer-Div">
+      <div className="outer-Div">
         <div className="img">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmR1UfShiKt6vY3J9tjztfpJvB7qM3xIQ_-TUF25_zZYzoTfz" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmR1UfShiKt6vY3J9tjztfpJvB7qM3xIQ_-TUF25_zZYzoTfz" />
         </div>
         <div className="rating">
-            <i class="fa-solid fa-star"> </i><p>8.6</p>
+          <i class="fa-solid fa-star"> </i>
+          <p>8.6</p>
         </div>
         <div className="info">
-            <h1>Breaking bad</h1>
+          <h1>Breaking bad</h1>
         </div>
-        <div>trailer</div>
-    </div>
+
+        <div className="trailer">
+  <div><i class="fa-solid fa-play"></i> Trailer</div>
+  <div className="i" ><i class="fa-solid fa-circle-info"></i></div>
+</div>
+
+
+
+
+
+      </div>
     </>
-  )
+  );
+}
+{
+  /* <p>Trailer</p>
+            <p className="info2"></p> */
 }
 
-export default Moviebox
+export default Moviebox;
