@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.img img {
+    width: 150px;
+    height: 200px;
+}
+.rating{
+    display: flex;
+    margin-top: 10px;
+}
+.rating i{
+    color: yellow;
+    font-size: 20px;
+}
+.rating p{
+    font-size: 20px;
+}
+.outer-Div{
+    border:2px solid black;
+    width: 150px;
+    background-color: #C7DBEF ;
+    border-radius: 15px;
+    margin-top: 0;
+}
+.info{
+    margin-top: 10px;
+}
+.info h1{
+    font-size:22px;
+    font-weight: 500;
+}
