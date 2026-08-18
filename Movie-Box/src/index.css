@@ -10,10 +10,12 @@ body{
     width: 160px;
 }
 .img img {
-    width: 160px;
-    height: 200px;
-
+  height: 200px;
+  width: 200px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
 }
+
 .rating{
     display: flex;
     margin-top: 10px;
@@ -29,20 +31,23 @@ body{
     color: white;
 }
 .outer-Div{
-    width:160px;
+    width:200px;
     background-color:#1a1a1a ;
     margin-top: 0;
-   
-
 }
 .info{
     margin-top: 10px;
     padding-left: 5px;
-}
-.info h1{
-    font-size:18px;
-    font-weight: 500;
     color: white;
+}
+.info h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 12px 0 10px;
+  color: white;
+}
+.info p{
+    margin-top: 0;
 }
 .trailer {
   display: flex;
@@ -55,4 +60,19 @@ body{
 }
 .i{
     font-size: 20px;
+}
+.watch-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #5799ef;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.watch-option {
+  width: 85%;
+  padding: 12px;
+  border-radius: 8px;
 }

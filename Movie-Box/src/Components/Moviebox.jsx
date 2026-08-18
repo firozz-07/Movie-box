@@ -11,6 +11,10 @@ function Moviebox() {
         </div>
         <div className="info">
           <h1>Breaking bad</h1>
+          <p>2008 • 5 Seasons • Crime/Drama</p>
+        </div>
+        <div className="watch-option">
+          watch option 
         </div>
 
         <div className="trailer">
