@@ -1,0 +1,513 @@
+const moviesAndShows = [
+  {
+    id: 1,
+    title: "Game of Thrones",
+    type: "Web Series",
+    imdbId: "tt0944947",
+    totalSeasons: 8,
+    firstSeasonReleaseDate: "2011-04-17",
+    imdbRating: 9.2,
+    ratingStars: 4.6,
+    genre: ["Fantasy", "Drama", "Adventure"],
+    watchOptionsIndia: ["JioHotstar", "VI Movies & TV"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0944947/img",
+    overview:
+      "Noble families fight for control of the Iron Throne while ancient supernatural forces awaken beyond the Wall. The series combines political intrigue, war, betrayal, dragons, and epic fantasy."
+  },
+
+  {
+    id: 2,
+    title: "Breaking Bad",
+    type: "Web Series",
+    imdbId: "tt0903747",
+    totalSeasons: 5,
+    firstSeasonReleaseDate: "2008-01-20",
+    imdbRating: 9.5,
+    ratingStars: 4.8,
+    genre: ["Crime", "Drama", "Thriller"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0903747/img",
+    overview:
+      "A chemistry teacher diagnosed with cancer enters the illegal drug trade with a former student, gradually transforming from an ordinary teacher into a powerful criminal figure."
+  },
+
+  {
+    id: 3,
+    title: "Better Call Saul",
+    type: "Web Series",
+    imdbId: "tt3032476",
+    totalSeasons: 6,
+    firstSeasonReleaseDate: "2015-02-08",
+    imdbRating: 9.0,
+    ratingStars: 4.5,
+    genre: ["Crime", "Drama"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt3032476/img",
+    overview:
+      "The story follows Jimmy McGill before he becomes the morally questionable lawyer Saul Goodman. His transformation is shaped by ambition, family conflict, crime, and his relationship with Kim Wexler."
+  },
+
+  {
+    id: 4,
+    title: "Stranger Things",
+    type: "Web Series",
+    imdbId: "tt4574334",
+    totalSeasons: 5,
+    firstSeasonReleaseDate: "2016-07-15",
+    imdbRating: 8.6,
+    ratingStars: 4.3,
+    genre: ["Sci-Fi", "Drama", "Horror", "Mystery"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt4574334/img",
+    overview:
+      "A group of teenagers uncover secret experiments, supernatural forces, and a terrifying alternate dimension known as the Upside Down while searching for their missing friend."
+  },
+
+  {
+    id: 5,
+    title: "Peaky Blinders",
+    type: "Web Series",
+    imdbId: "tt2442560",
+    totalSeasons: 6,
+    firstSeasonReleaseDate: "2013-09-12",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Crime", "Drama", "History"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt2442560/img",
+    overview:
+      "The Shelby family builds a powerful criminal empire in post-World War I Birmingham while dealing with rival gangs, politicians, police, and internal family conflicts."
+  },
+
+  {
+    id: 6,
+    title: "Dark",
+    type: "Web Series",
+    imdbId: "tt5753856",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2017-12-01",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Sci-Fi", "Mystery", "Thriller", "Drama"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt5753856/img",
+    overview:
+      "The disappearance of a child exposes a mysterious connection between four families and reveals a complex time-travel mystery spanning multiple generations."
+  },
+
+  {
+    id: 7,
+    title: "Money Heist",
+    type: "Web Series",
+    imdbId: "tt6468322",
+    totalSeasons: 5,
+    firstSeasonReleaseDate: "2017-05-02",
+    imdbRating: 8.2,
+    ratingStars: 4.1,
+    genre: ["Crime", "Thriller", "Drama"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt6468322/img",
+    overview:
+      "A criminal mastermind known as the Professor assembles a group of specialists to execute ambitious heists while manipulating police negotiations and public opinion."
+  },
+
+  {
+    id: 8,
+    title: "The Boys",
+    type: "Web Series",
+    imdbId: "tt1190634",
+    totalSeasons: 5,
+    firstSeasonReleaseDate: "2019-07-26",
+    imdbRating: 8.6,
+    ratingStars: 4.3,
+    genre: ["Action", "Comedy", "Drama", "Superhero"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt1190634/img",
+    overview:
+      "A group of ordinary people takes on corrupt superheroes who use their immense powers and celebrity status to exploit society and protect corporate interests."
+  },
+
+  {
+    id: 9,
+    title: "House of the Dragon",
+    type: "Web Series",
+    imdbId: "tt11198330",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2022-08-21",
+    imdbRating: 8.3,
+    ratingStars: 4.2,
+    genre: ["Fantasy", "Drama", "Adventure"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt11198330/img",
+    overview:
+      "Set almost two centuries before Game of Thrones, the series follows the Targaryen dynasty as a brutal succession conflict divides the family and pushes Westeros toward civil war."
+  },
+
+  {
+    id: 10,
+    title: "The Witcher",
+    type: "Web Series",
+    imdbId: "tt5180504",
+    totalSeasons: 5,
+    firstSeasonReleaseDate: "2019-12-20",
+    imdbRating: 7.8,
+    ratingStars: 3.9,
+    genre: ["Fantasy", "Adventure", "Drama"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt5180504/img",
+    overview:
+      "Monster hunter Geralt of Rivia travels through a dangerous fantasy world filled with monsters, kingdoms, magic, political conflicts, and destiny."
+  },
+
+  {
+    id: 11,
+    title: "Narcos",
+    type: "Web Series",
+    imdbId: "tt2707408",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2015-08-28",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Crime", "Drama", "Biography"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt2707408/img",
+    overview:
+      "A gritty dramatization of the rise of powerful drug cartels and the law-enforcement agencies attempting to bring down the people controlling the cocaine trade."
+  },
+
+  {
+    id: 12,
+    title: "Sherlock",
+    type: "TV Series",
+    imdbId: "tt1475582",
+    totalSeasons: 4,
+    firstSeasonReleaseDate: "2010-07-25",
+    imdbRating: 9.1,
+    ratingStars: 4.6,
+    genre: ["Crime", "Mystery", "Drama"],
+    watchOptionsIndia: ["Netflix", "Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt1475582/img",
+    overview:
+      "A modern adaptation of Sherlock Holmes follows the brilliant detective and Dr. John Watson as they solve unusual and complex crimes in contemporary London."
+  },
+
+  {
+    id: 13,
+    title: "The Last of Us",
+    type: "Web Series",
+    imdbId: "tt3581920",
+    totalSeasons: 2,
+    firstSeasonReleaseDate: "2023-01-15",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Drama", "Post-Apocalyptic", "Adventure"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt3581920/img",
+    overview:
+      "Years after a fungal outbreak devastates civilization, a hardened survivor is tasked with transporting a teenage girl across a dangerous and ruined United States."
+  },
+
+  {
+    id: 14,
+    title: "Succession",
+    type: "Web Series",
+    imdbId: "tt7660850",
+    totalSeasons: 4,
+    firstSeasonReleaseDate: "2018-06-03",
+    imdbRating: 8.9,
+    ratingStars: 4.5,
+    genre: ["Drama", "Comedy"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt7660850/img",
+    overview:
+      "The extremely wealthy Roy family fights for control of a global media empire as the aging patriarch considers who should inherit his business."
+  },
+
+  {
+    id: 15,
+    title: "The Office",
+    type: "TV Series",
+    imdbId: "tt0386676",
+    totalSeasons: 9,
+    firstSeasonReleaseDate: "2005-03-24",
+    imdbRating: 9.0,
+    ratingStars: 4.5,
+    genre: ["Comedy", "Sitcom"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0386676/img",
+    overview:
+      "A mockumentary-style comedy follows the employees of a paper company and explores their strange workplace relationships, friendships, romances, and everyday office problems."
+  },
+
+  {
+    id: 16,
+    title: "Friends",
+    type: "TV Series",
+    imdbId: "tt0108778",
+    totalSeasons: 10,
+    firstSeasonReleaseDate: "1994-09-22",
+    imdbRating: 8.9,
+    ratingStars: 4.5,
+    genre: ["Comedy", "Romance"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0108778/img",
+    overview:
+      "Six close friends navigate careers, relationships, family problems, breakups, and everyday life together while living in New York City."
+  },
+
+  {
+    id: 17,
+    title: "Wednesday",
+    type: "Web Series",
+    imdbId: "tt13443470",
+    totalSeasons: 2,
+    firstSeasonReleaseDate: "2022-11-23",
+    imdbRating: 8.0,
+    ratingStars: 4.0,
+    genre: ["Comedy", "Fantasy", "Mystery"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt13443470/img",
+    overview:
+      "Wednesday Addams attends Nevermore Academy and becomes involved in a supernatural mystery while investigating secrets connected to her family and the school."
+  },
+
+  {
+    id: 18,
+    title: "Squid Game",
+    type: "Web Series",
+    imdbId: "tt10919420",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2021-09-17",
+    imdbRating: 7.9,
+    ratingStars: 4.0,
+    genre: ["Thriller", "Drama", "Mystery", "Survival"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt10919420/img",
+    overview:
+      "Financially desperate people enter a mysterious competition where they can win a life-changing amount of money, but losing can have deadly consequences."
+  },
+
+  {
+    id: 19,
+    title: "Loki",
+    type: "Web Series",
+    imdbId: "tt9140554",
+    totalSeasons: 2,
+    firstSeasonReleaseDate: "2021-06-09",
+    imdbRating: 8.2,
+    ratingStars: 4.1,
+    genre: ["Action", "Fantasy", "Sci-Fi"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt9140554/img",
+    overview:
+      "After stealing the Tesseract, Loki is brought to a mysterious organization that monitors the timeline and becomes involved in a conflict that threatens reality itself."
+  },
+
+  {
+    id: 20,
+    title: "The Mandalorian",
+    type: "Web Series",
+    imdbId: "tt8111088",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2019-11-12",
+    imdbRating: 8.6,
+    ratingStars: 4.3,
+    genre: ["Sci-Fi", "Adventure", "Action"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt8111088/img",
+    overview:
+      "A lone bounty hunter travels through the galaxy and becomes responsible for protecting a mysterious Force-sensitive child while facing enemies and rival factions."
+  },
+
+  {
+    id: 21,
+    title: "Panchayat",
+    type: "Indian Web Series",
+    imdbId: "tt12004706",
+    totalSeasons: 4,
+    firstSeasonReleaseDate: "2020-04-03",
+    imdbRating: 9.0,
+    ratingStars: 4.5,
+    genre: ["Comedy", "Drama"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt12004706/img",
+    overview:
+      "A young engineering graduate takes a government job as a village secretary and struggles with rural politics, eccentric villagers, friendships, and everyday village life."
+  },
+
+  {
+    id: 22,
+    title: "Mirzapur",
+    type: "Indian Web Series",
+    imdbId: "tt8809528",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2018-11-15",
+    imdbRating: 8.5,
+    ratingStars: 4.3,
+    genre: ["Crime", "Action", "Drama"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt8809528/img",
+    overview:
+      "A violent crime saga revolves around the powerful Tripathi family and the struggle for control over the criminal empire of Mirzapur."
+  },
+
+  {
+    id: 23,
+    title: "Scam 1992: The Harshad Mehta Story",
+    type: "Indian Web Series",
+    imdbId: "tt12392504",
+    totalSeasons: 1,
+    firstSeasonReleaseDate: "2020-10-09",
+    imdbRating: 9.2,
+    ratingStars: 4.6,
+    genre: ["Biography", "Drama", "Finance"],
+    watchOptionsIndia: ["Sony LIV"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt12392504/img",
+    overview:
+      "The series dramatizes the extraordinary rise and fall of stock market broker Harshad Mehta and the financial scandal that shook India's stock market."
+  },
+
+  {
+    id: 24,
+    title: "The Family Man",
+    type: "Indian Web Series",
+    imdbId: "tt9544034",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2019-09-20",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Action", "Comedy", "Drama", "Thriller"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt9544034/img",
+    overview:
+      "A middle-class government intelligence officer secretly investigates national security threats while struggling to balance dangerous missions with his ordinary family life."
+  },
+
+  {
+    id: 25,
+    title: "Kota Factory",
+    type: "Indian Web Series",
+    imdbId: "tt9432978",
+    totalSeasons: 3,
+    firstSeasonReleaseDate: "2019-04-16",
+    imdbRating: 9.0,
+    ratingStars: 4.5,
+    genre: ["Comedy", "Drama", "Education"],
+    watchOptionsIndia: ["Netflix"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt9432978/img",
+    overview:
+      "A student in Kota experiences the pressure of competitive entrance exams while dealing with friendships, teachers, relationships, expectations, and personal growth."
+  },
+
+  {
+    id: 26,
+    title: "The Boys in the Boat",
+    type: "Movie",
+    imdbId: "tt1856080",
+    totalSeasons: null,
+    firstSeasonReleaseDate: "2023-12-25",
+    imdbRating: 7.0,
+    ratingStars: 3.5,
+    genre: ["Drama", "Sport", "Biography"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt1856080/img",
+    overview:
+      "A group of young rowers from the University of Washington attempts to overcome financial struggles and fierce competition to represent the United States at the 1936 Olympics."
+  },
+
+  {
+    id: 27,
+    title: "Interstellar",
+    type: "Movie",
+    imdbId: "tt0816692",
+    totalSeasons: null,
+    firstSeasonReleaseDate: "2014-11-07",
+    imdbRating: 8.7,
+    ratingStars: 4.4,
+    genre: ["Sci-Fi", "Drama", "Adventure"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0816692/img",
+    overview:
+      "As Earth becomes increasingly uninhabitable, a group of astronauts travels through a wormhole in search of a new home for humanity."
+  },
+
+  {
+    id: 28,
+    title: "Inception",
+    type: "Movie",
+    imdbId: "tt1375666",
+    totalSeasons: null,
+    firstSeasonReleaseDate: "2010-07-16",
+    imdbRating: 8.8,
+    ratingStars: 4.4,
+    genre: ["Sci-Fi", "Action", "Thriller"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt1375666/img",
+    overview:
+      "A skilled thief who enters people's dreams is offered a chance to erase his past by performing an almost impossible task: planting an idea into someone's subconscious."
+  },
+
+  {
+    id: 29,
+    title: "The Dark Knight",
+    type: "Movie",
+    imdbId: "tt0468569",
+    totalSeasons: null,
+    firstSeasonReleaseDate: "2008-07-18",
+    imdbRating: 9.0,
+    ratingStars: 4.5,
+    genre: ["Action", "Crime", "Drama"],
+    watchOptionsIndia: ["Amazon Prime Video"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt0468569/img",
+    overview:
+      "Batman faces his most dangerous enemy when the Joker plunges Gotham City into chaos and forces the hero to confront the limits of his moral code."
+  },
+
+  {
+    id: 30,
+    title: "Oppenheimer",
+    type: "Movie",
+    imdbId: "tt15398776",
+    totalSeasons: null,
+    firstSeasonReleaseDate: "2023-07-21",
+    imdbRating: 8.6,
+    ratingStars: 4.3,
+    genre: ["Biography", "Drama", "History"],
+    watchOptionsIndia: ["JioHotstar"],
+    coverPicture:
+      "https://images.metahub.space/poster/medium/tt15398776/img",
+    overview:
+      "The film follows J. Robert Oppenheimer and the development of the atomic bomb during the Manhattan Project while exploring the scientific, political, and personal consequences of his work."
+  }
+];
+
+export default moviesAndShows;
