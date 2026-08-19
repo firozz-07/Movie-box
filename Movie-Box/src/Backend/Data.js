@@ -8,7 +8,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2011-04-17",
     imdbRating: 9.2,
     ratingStars: 4.6,
-    genre: ["Fantasy", "Drama", "Adventure"],
+    genre: ["Fantasy ", "Drama ", "Adventure"],
     watchOptionsIndia: ["JioHotstar", "VI Movies & TV"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0944947/img",
@@ -25,7 +25,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2008-01-20",
     imdbRating: 9.5,
     ratingStars: 4.8,
-    genre: ["Crime", "Drama", "Thriller"],
+    genre: ["Crime ", "Drama ", "Thriller"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0903747/img",
@@ -42,7 +42,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2015-02-08",
     imdbRating: 9.0,
     ratingStars: 4.5,
-    genre: ["Crime", "Drama"],
+    genre: ["Crime ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt3032476/img",
@@ -59,7 +59,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2016-07-15",
     imdbRating: 8.6,
     ratingStars: 4.3,
-    genre: ["Sci-Fi", "Drama", "Horror", "Mystery"],
+    genre: ["Sci-Fi ", "Drama ", "Horror ", "Mystery"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt4574334/img",
@@ -76,7 +76,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2013-09-12",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Crime", "Drama", "History"],
+    genre: ["Crime ", "Drama ", "History"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt2442560/img",
@@ -93,7 +93,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2017-12-01",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Sci-Fi", "Mystery", "Thriller", "Drama"],
+    genre: ["Sci-Fi", "Mystery ", "Thriller ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt5753856/img",
@@ -110,7 +110,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2017-05-02",
     imdbRating: 8.2,
     ratingStars: 4.1,
-    genre: ["Crime", "Thriller", "Drama"],
+    genre: ["Crime ", "Thriller ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt6468322/img",
@@ -127,7 +127,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2019-07-26",
     imdbRating: 8.6,
     ratingStars: 4.3,
-    genre: ["Action", "Comedy", "Drama", "Superhero"],
+    genre: ["Action", "Comedy ", "Drama ", "Superhero"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt1190634/img",
@@ -144,7 +144,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2022-08-21",
     imdbRating: 8.3,
     ratingStars: 4.2,
-    genre: ["Fantasy", "Drama", "Adventure"],
+    genre: ["Fantasy ", "Drama ", "Adventure"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt11198330/img",
@@ -161,7 +161,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2019-12-20",
     imdbRating: 7.8,
     ratingStars: 3.9,
-    genre: ["Fantasy", "Adventure", "Drama"],
+    genre: ["Fantasy ", "Adventure ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt5180504/img",
@@ -178,7 +178,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2015-08-28",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Crime", "Drama", "Biography"],
+    genre: ["Crime ", "Drama ", "Biography"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt2707408/img",
@@ -195,7 +195,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2010-07-25",
     imdbRating: 9.1,
     ratingStars: 4.6,
-    genre: ["Crime", "Mystery", "Drama"],
+    genre: ["Crime ", "Mystery ", "Drama"],
     watchOptionsIndia: ["Netflix", "Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt1475582/img",
@@ -212,7 +212,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2023-01-15",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Drama", "Post-Apocalyptic", "Adventure"],
+    genre: ["Drama ", "Post-Apocalyptic ", "Adventure"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt3581920/img",
@@ -229,7 +229,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2018-06-03",
     imdbRating: 8.9,
     ratingStars: 4.5,
-    genre: ["Drama", "Comedy"],
+    genre: ["Drama ", "Comedy"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt7660850/img",
@@ -246,7 +246,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2005-03-24",
     imdbRating: 9.0,
     ratingStars: 4.5,
-    genre: ["Comedy", "Sitcom"],
+    genre: ["Comedy ", "Sitcom"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0386676/img",
@@ -263,7 +263,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "1994-09-22",
     imdbRating: 8.9,
     ratingStars: 4.5,
-    genre: ["Comedy", "Romance"],
+    genre: ["Comedy ", "Romance"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0108778/img",
@@ -280,7 +280,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2022-11-23",
     imdbRating: 8.0,
     ratingStars: 4.0,
-    genre: ["Comedy", "Fantasy", "Mystery"],
+    genre: ["Comedy ", "Fantasy ", "Mystery"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt13443470/img",
@@ -297,7 +297,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2021-09-17",
     imdbRating: 7.9,
     ratingStars: 4.0,
-    genre: ["Thriller", "Drama", "Mystery", "Survival"],
+    genre: ["Thriller ", "Drama ", "Mystery ", "Survival"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt10919420/img",
@@ -314,7 +314,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2021-06-09",
     imdbRating: 8.2,
     ratingStars: 4.1,
-    genre: ["Action", "Fantasy", "Sci-Fi"],
+    genre: ["Action ", "Fantasy ", "Sci-Fi"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt9140554/img",
@@ -331,7 +331,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2019-11-12",
     imdbRating: 8.6,
     ratingStars: 4.3,
-    genre: ["Sci-Fi", "Adventure", "Action"],
+    genre: ["Sci-Fi ", "Adventure ", "Action"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt8111088/img",
@@ -348,7 +348,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2020-04-03",
     imdbRating: 9.0,
     ratingStars: 4.5,
-    genre: ["Comedy", "Drama"],
+    genre: ["Comedy ", "Drama"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt12004706/img",
@@ -365,7 +365,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2018-11-15",
     imdbRating: 8.5,
     ratingStars: 4.3,
-    genre: ["Crime", "Action", "Drama"],
+    genre: ["Crime ", "Action ", "Drama"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt8809528/img",
@@ -382,7 +382,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2020-10-09",
     imdbRating: 9.2,
     ratingStars: 4.6,
-    genre: ["Biography", "Drama", "Finance"],
+    genre: ["Biography ", "Drama ", "Finance"],
     watchOptionsIndia: ["Sony LIV"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt12392504/img",
@@ -399,7 +399,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2019-09-20",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Action", "Comedy", "Drama", "Thriller"],
+    genre: ["Action ", "Comedy ", "Drama ", "Thriller"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt9544034/img",
@@ -416,7 +416,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2019-04-16",
     imdbRating: 9.0,
     ratingStars: 4.5,
-    genre: ["Comedy", "Drama", "Education"],
+    genre: ["Comedy ", "Drama ", "Education"],
     watchOptionsIndia: ["Netflix"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt9432978/img",
@@ -433,7 +433,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2023-12-25",
     imdbRating: 7.0,
     ratingStars: 3.5,
-    genre: ["Drama", "Sport", "Biography"],
+    genre: ["Drama ", "Sport ", "Biography"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt1856080/img",
@@ -450,7 +450,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2014-11-07",
     imdbRating: 8.7,
     ratingStars: 4.4,
-    genre: ["Sci-Fi", "Drama", "Adventure"],
+    genre: ["Sci-Fi ", "Drama ", "Adventure"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0816692/img",
@@ -467,7 +467,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2010-07-16",
     imdbRating: 8.8,
     ratingStars: 4.4,
-    genre: ["Sci-Fi", "Action", "Thriller"],
+    genre: ["Sci-Fi ", "Action ", "Thriller"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt1375666/img",
@@ -484,7 +484,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2008-07-18",
     imdbRating: 9.0,
     ratingStars: 4.5,
-    genre: ["Action", "Crime", "Drama"],
+    genre: ["Action ", "Crime ", "Drama"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt0468569/img",
@@ -501,7 +501,7 @@ const moviesAndShows = [
     firstSeasonReleaseDate: "2023-07-21",
     imdbRating: 8.6,
     ratingStars: 4.3,
-    genre: ["Biography", "Drama", "History"],
+    genre: ["Biography ", "Drama ", "History"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture:
       "https://images.metahub.space/poster/medium/tt15398776/img",

@@ -1,37 +1,34 @@
 function Moviebox({moviesAndShows}) {
   return (
     <>
+    <div className="outer-Div" >
       {moviesAndShows.map((show)=>(
-        <div className="outer-Div">
-        <div className="img">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmR1UfShiKt6vY3J9tjztfpJvB7qM3xIQ_-TUF25_zZYzoTfz" />
-        </div>
-        <div className="rating">
-          <i class="fa-solid fa-star"> </i>
-          <p>8.6</p>
-        </div>
-        <div className="info">
-          <h1>{show.title}</h1>
-          <p>2008 • 5 Seasons • Crime/Drama</p>
-        </div>
-        <div className="watch-option">
-          watch option 
-        </div>
+        <div key={show.id}>
+          <div className="img">
+            <img src={show.coverPicture} alt={show.title} />
+          </div>
+          <div className="rating">
+            <i className="fa-solid fa-star"> </i>
+            <p>{show.imdbRating}</p>
+          </div>
+          <div className="info">
+            <h1>{show.title}</h1>
+            <p>{show.firstSeasonReleaseDate} • {show.totalSeasons === null ? "Movie" : `${show.totalSeasons} Seasons`} • {" "}{show.genre.join(" , ")}</p>
+          </div>
+          <div className="watch-option">
+            watch option 
+          </div>
 
-        <div className="trailer">
-  <div><i class="fa-solid fa-play"></i> Trailer</div>
-  <div className="i" ><i class="fa-solid fa-circle-info"></i></div>
-</div>
-      </div>
+          <div className="trailer">
+            <div><i className="fa-solid fa-play"></i> Trailer</div>
+            <div className="i" ><i className="fa-solid fa-circle-info"></i></div>
+          </div>
+        </div>
       )
 
       )}
+       </div>
     </>
   );
 }
-{
-  /* <p>Trailer</p>
-            <p className="info2"></p> */
-}
-
 export default Moviebox;
