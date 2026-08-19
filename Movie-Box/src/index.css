@@ -102,9 +102,14 @@ body {
   border-radius: 20px;
   margin-left: 15px;
   margin-top: 10px;
+  transition: 0.7s;
 }
 .watch-option {
   width: 85%;
   padding: 12px;
   border-radius: 8px;
+}
+.watch-option:hover{
+background-color: #104892;
+color: white;
 }
