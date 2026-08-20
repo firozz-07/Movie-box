@@ -11,6 +11,7 @@ const moviesAndShows = [
     genre: ["Fantasy ", "Drama ", "Adventure"],
     watchOptionsIndia: ["JioHotstar", "VI Movies & TV"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0944947/img",
+    creator:"George R R Martin",
     overview:
       "Noble families fight for control of the Iron Throne while ancient supernatural forces awaken beyond the Wall. The series combines political intrigue, war, betrayal, dragons, and epic fantasy.",
   },
@@ -27,6 +28,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Drama ", "Thriller"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0903747/img",
+    creator:"Vince Gilligan",
     overview:
       "A chemistry teacher diagnosed with cancer enters the illegal drug trade with a former student, gradually transforming from an ordinary teacher into a powerful criminal figure.",
   },
@@ -43,6 +45,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt3032476/img",
+    creator:"Vince Gilligan",
     overview:
       "The story follows Jimmy McGill before he becomes the morally questionable lawyer Saul Goodman. His transformation is shaped by ambition, family conflict, crime, and his relationship with Kim Wexler.",
   },
@@ -59,6 +62,7 @@ const moviesAndShows = [
     genre: ["Sci-Fi ", "Drama ", "Horror ", "Mystery"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt4574334/img",
+     creator:"Vince Gilligan",
     overview:
       "A group of teenagers uncover secret experiments, supernatural forces, and a terrifying alternate dimension known as the Upside Down while searching for their missing friend.",
   },
@@ -75,6 +79,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Drama ", "History"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt2442560/img",
+     creator:"Vince Gilligan",
     overview:
       "The Shelby family builds a powerful criminal empire in post-World War I Birmingham while dealing with rival gangs, politicians, police, and internal family conflicts.",
   },
@@ -91,6 +96,7 @@ const moviesAndShows = [
     genre: ["Sci-Fi", "Mystery ", "Thriller ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt5753856/img",
+     creator:"Vince Gilligan",
     overview:
       "The disappearance of a child exposes a mysterious connection between four families and reveals a complex time-travel mystery spanning multiple generations.",
   },
@@ -107,6 +113,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Thriller ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt6468322/img",
+     creator:"Vince Gilligan",
     overview:
       "A criminal mastermind known as the Professor assembles a group of specialists to execute ambitious heists while manipulating police negotiations and public opinion.",
   },
@@ -123,6 +130,7 @@ const moviesAndShows = [
     genre: ["Action", "Comedy ", "Drama ", "Superhero"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt1190634/img",
+     creator:"Vince Gilligan",
     overview:
       "A group of ordinary people takes on corrupt superheroes who use their immense powers and celebrity status to exploit society and protect corporate interests.",
   },
@@ -139,6 +147,7 @@ const moviesAndShows = [
     genre: ["Fantasy ", "Drama ", "Adventure"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt11198330/img",
+     creator:"Vince Gilligan",
     overview:
       "Set almost two centuries before Game of Thrones, the series follows the Targaryen dynasty as a brutal succession conflict divides the family and pushes Westeros toward civil war.",
   },
@@ -155,6 +164,7 @@ const moviesAndShows = [
     genre: ["Fantasy ", "Adventure ", "Drama"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt5180504/img",
+     creator:"Vince Gilligan",
     overview:
       "Monster hunter Geralt of Rivia travels through a dangerous fantasy world filled with monsters, kingdoms, magic, political conflicts, and destiny.",
   },
@@ -171,6 +181,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Drama ", "Biography"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt2707408/img",
+     creator:"Vince Gilligan",
     overview:
       "A gritty dramatization of the rise of powerful drug cartels and the law-enforcement agencies attempting to bring down the people controlling the cocaine trade.",
   },
@@ -187,6 +198,7 @@ const moviesAndShows = [
     genre: ["Crime ", "Mystery ", "Drama"],
     watchOptionsIndia: ["Netflix", "Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt1475582/img",
+     creator:"Vince Gilligan",
     overview:
       "A modern adaptation of Sherlock Holmes follows the brilliant detective and Dr. John Watson as they solve unusual and complex crimes in contemporary London.",
   },
@@ -203,6 +215,7 @@ const moviesAndShows = [
     genre: ["Drama ", "Post-Apocalyptic ", "Adventure"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt3581920/img",
+     creator:"Vince Gilligan",
     overview:
       "Years after a fungal outbreak devastates civilization, a hardened survivor is tasked with transporting a teenage girl across a dangerous and ruined United States.",
   },
@@ -219,6 +232,7 @@ const moviesAndShows = [
     genre: ["Drama ", "Comedy"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt7660850/img",
+     creator:"Vince Gilligan",
     overview:
       "The extremely wealthy Roy family fights for control of a global media empire as the aging patriarch considers who should inherit his business.",
   },
@@ -235,6 +249,7 @@ const moviesAndShows = [
     genre: ["Comedy ", "Sitcom"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0386676/img",
+     creator:"Vince Gilligan",
     overview:
       "A mockumentary-style comedy follows the employees of a paper company and explores their strange workplace relationships, friendships, romances, and everyday office problems.",
   },
@@ -251,6 +266,7 @@ const moviesAndShows = [
     genre: ["Comedy ", "Romance"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0108778/img",
+     creator:"Vince Gilligan",
     overview:
       "Six close friends navigate careers, relationships, family problems, breakups, and everyday life together while living in New York City.",
   },
@@ -267,6 +283,7 @@ const moviesAndShows = [
     genre: ["Comedy ", "Fantasy ", "Mystery"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt13443470/img",
+     creator:"Vince Gilligan",
     overview:
       "Wednesday Addams attends Nevermore Academy and becomes involved in a supernatural mystery while investigating secrets connected to her family and the school.",
   },
@@ -283,6 +300,7 @@ const moviesAndShows = [
     genre: ["Thriller ", "Drama ", "Mystery ", "Survival"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt10919420/img",
+     creator:"Vince Gilligan",
     overview:
       "Financially desperate people enter a mysterious competition where they can win a life-changing amount of money, but losing can have deadly consequences.",
   },
@@ -299,6 +317,7 @@ const moviesAndShows = [
     genre: ["Action ", "Fantasy ", "Sci-Fi"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt9140554/img",
+     creator:"Vince Gilligan",
     overview:
       "After stealing the Tesseract, Loki is brought to a mysterious organization that monitors the timeline and becomes involved in a conflict that threatens reality itself.",
   },
@@ -315,6 +334,7 @@ const moviesAndShows = [
     genre: ["Sci-Fi ", "Adventure ", "Action"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt8111088/img",
+     creator:"Vince Gilligan",
     overview:
       "A lone bounty hunter travels through the galaxy and becomes responsible for protecting a mysterious Force-sensitive child while facing enemies and rival factions.",
   },
@@ -331,6 +351,7 @@ const moviesAndShows = [
     genre: ["Comedy ", "Drama"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt12004706/img",
+     creator:"Vince Gilligan",
     overview:
       "A young engineering graduate takes a government job as a village secretary and struggles with rural politics, eccentric villagers, friendships, and everyday village life.",
   },
@@ -348,6 +369,7 @@ const moviesAndShows = [
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture:
       "https://m.media-amazon.com/images/M/MV5BZTFjMzMxZTUtYTMyNy00OWNhLTk4ODQtNGI1NjI1NjJhMzc3XkEyXkFqcGc@._V1_SX250.jpg",
+       creator:"Vince Gilligan",
     overview:
       "A violent crime saga revolves around the powerful Tripathi family and the struggle for control over the criminal empire of Mirzapur.",
   },
@@ -364,6 +386,7 @@ const moviesAndShows = [
     genre: ["Biography ", "Drama ", "Finance"],
     watchOptionsIndia: ["Sony LIV"],
     coverPicture: "https://images.metahub.space/poster/medium/tt12392504/img",
+     creator:"Vince Gilligan",
     overview:
       "The series dramatizes the extraordinary rise and fall of stock market broker Harshad Mehta and the financial scandal that shook India's stock market.",
   },
@@ -380,6 +403,7 @@ const moviesAndShows = [
     genre: ["Action ", "Comedy ", "Drama ", "Thriller"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt9544034/img",
+     creator:"Vince Gilligan",
     overview:
       "A middle-class government intelligence officer secretly investigates national security threats while struggling to balance dangerous missions with his ordinary family life.",
   },
@@ -396,6 +420,7 @@ const moviesAndShows = [
     genre: ["Comedy ", "Drama ", "Education"],
     watchOptionsIndia: ["Netflix"],
     coverPicture: "https://images.metahub.space/poster/medium/tt9432978/img",
+     creator:"Vince Gilligan",
     overview:
       "A student in Kota experiences the pressure of competitive entrance exams while dealing with friendships, teachers, relationships, expectations, and personal growth.",
   },
@@ -412,6 +437,7 @@ const moviesAndShows = [
     genre: ["Drama ", "Sport ", "Biography"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt1856080/img",
+     creator:"Vince Gilligan",
     overview:
       "A group of young rowers from the University of Washington attempts to overcome financial struggles and fierce competition to represent the United States at the 1936 Olympics.",
   },
@@ -428,6 +454,7 @@ const moviesAndShows = [
     genre: ["Sci-Fi ", "Drama ", "Adventure"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0816692/img",
+     creator:"Vince Gilligan",
     overview:
       "As Earth becomes increasingly uninhabitable, a group of astronauts travels through a wormhole in search of a new home for humanity.",
   },
@@ -444,6 +471,7 @@ const moviesAndShows = [
     genre: ["Sci-Fi ", "Action ", "Thriller"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt1375666/img",
+     creator:"Vince Gilligan",
     overview:
       "A skilled thief who enters people's dreams is offered a chance to erase his past by performing an almost impossible task: planting an idea into someone's subconscious.",
   },
@@ -460,6 +488,7 @@ const moviesAndShows = [
     genre: ["Action ", "Crime ", "Drama"],
     watchOptionsIndia: ["Amazon Prime Video"],
     coverPicture: "https://images.metahub.space/poster/medium/tt0468569/img",
+     creator:"Vince Gilligan",
     overview:
       "Batman faces his most dangerous enemy when the Joker plunges Gotham City into chaos and forces the hero to confront the limits of his moral code.",
   },
@@ -476,6 +505,7 @@ const moviesAndShows = [
     genre: ["Biography ", "Drama ", "History"],
     watchOptionsIndia: ["JioHotstar"],
     coverPicture: "https://images.metahub.space/poster/medium/tt15398776/img",
+     creator:"Vince Gilligan",
     overview:
       "The film follows J. Robert Oppenheimer and the development of the atomic bomb during the Manhattan Project while exploring the scientific, political, and personal consequences of his work.",
   },

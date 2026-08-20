@@ -113,3 +113,51 @@ body {
 background-color: #104892;
 color: white;
 }
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  width: 350px;
+  padding: 25px;
+
+  background: #181b24;
+  color: white;
+
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.watch-option {
+  cursor: pointer;
+}
+
+.inner-div {
+display: flex;
+}
+
+.inner-div img{
+width: 100px;
+}

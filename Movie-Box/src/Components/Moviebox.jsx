@@ -1,4 +1,6 @@
+import { useState } from "react";
 function Moviebox({ moviesAndShows }) {
+  const [selectedMovie, setSelectedMovie] = useState(null);
   return (
     <>
       <div className="outer-Div">
@@ -21,7 +23,12 @@ function Moviebox({ moviesAndShows }) {
                 • {show.genre.join(" , ")}
               </p>
             </div>
-            <div className="watch-option">watch option</div>
+            <div
+              className="watch-option"
+              onClick={() => setSelectedMovie(show)}
+            >
+              watch option
+            </div>
 
             <div className="trailer">
               <div>
@@ -34,6 +41,49 @@ function Moviebox({ moviesAndShows }) {
           </div>
         ))}
       </div>
+
+      {selectedMovie && (
+        <div className="modal-overlay" onClick={() => setSelectedMovie(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="close-btn"
+              onClick={() => setSelectedMovie(null)}
+            >
+              ✕
+            </button>
+
+            <div className="inner-div">
+              <div className="image-div">
+                <img
+                  src={selectedMovie.coverPicture}
+                  alt={selectedMovie.title}
+                />
+              </div>
+              <div className="modal-title">
+                <h2>{selectedMovie.title}</h2>
+                <p>
+                  • {selectedMovie.firstSeasonReleaseDate} {"  "} •{" "}
+                  {selectedMovie.totalSeasons}
+                  {" Seasons"}{" "}
+                </p>
+                • {selectedMovie.genre.join(" • ")}
+                <br />
+                <p>
+                  <i className="fa-solid fa-star"> </i>{" "}
+                  {selectedMovie.imdbRating}
+                </p>
+                • Creator : {selectedMovie.creator}
+              </div>
+            </div>
+            <div className="options">
+              <h3>Available on:</h3>
+              {selectedMovie.watchOptionsIndia.map((platform) => (
+                <p key={platform}>•{platform}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
