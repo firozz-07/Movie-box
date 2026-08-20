@@ -118,7 +118,6 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,4 +191,16 @@ body {
   text-align:start;
   background-color:#121212;
   border-radius:10px;
+}
+.sorry-page{
+  margin-top: 30px;
+  font-size: 24px;
+}
+.trailer2:hover{
+  background-color: #104892;
+}
+.trailer2{
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
 }

@@ -1,13 +1,14 @@
 import { useState } from "react";
 function Moviebox({ moviesAndShows }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [movieInfo, setMovieInfo] = useState(null);
   return (
     <>
       <div className="outer-Div">
         {moviesAndShows.map((show) => (
           <div key={show.id}>
             <div className="img">
-              <img src={show.coverPicture} alt={show.title} />
+              <img src={show.coverPicture} alt={show.title} onClick={()=>window.open(show.coverPicture)} />
             </div>
             <div className="rating">
               <i className="fa-solid fa-star"> </i>
@@ -31,10 +32,10 @@ function Moviebox({ moviesAndShows }) {
             </div>
 
             <div className="trailer">
-              <div>
+              <div onClick={()=>{window.open(show.trailer)}}className="trailer2">
                 <i className="fa-solid fa-play"></i> Trailer
               </div>
-              <div className="i">
+              <div className="i" onClick={()=>setMovieInfo(show)}>
                 <i className="fa-solid fa-circle-info"></i>
               </div>
             </div>
@@ -83,6 +84,25 @@ function Moviebox({ moviesAndShows }) {
                 <p key={platform}>• {platform}</p>
               ))}
             </div>
+          </div>
+        </div>
+      )}
+      {movieInfo && (
+        <div className="modal-overlay" onClick={() => setMovieInfo(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="close-btn"
+              onClick={() => setMovieInfo(null)}
+            >
+              ✕
+            </button>
+            <div className="overview">
+            <h1>{movieInfo.title} </h1><br />
+            <span className="data">
+            <p>{movieInfo.overview}</p>
+            </span>
+            </div>
+
           </div>
         </div>
       )}
