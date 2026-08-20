@@ -177,3 +177,19 @@ body {
 .options p {
   color: #a0a0a0;
 }
+.input-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input-div input{
+  width: 80%;
+  padding: auto;
+  margin-top :20px;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  text-align:start;
+  background-color:#121212;
+  border-radius:10px;
+}
