@@ -8,7 +8,11 @@ function Moviebox({ moviesAndShows }) {
         {moviesAndShows.map((show) => (
           <div key={show.id}>
             <div className="img">
-              <img src={show.coverPicture} alt={show.title} onClick={()=>window.open(show.coverPicture)} />
+              <img
+                src={show.coverPicture}
+                alt={show.title}
+                onClick={() => window.open(show.coverPicture)}
+              />
             </div>
             <div className="rating">
               <i className="fa-solid fa-star"> </i>
@@ -32,10 +36,15 @@ function Moviebox({ moviesAndShows }) {
             </div>
 
             <div className="trailer">
-              <div onClick={()=>{window.open(show.trailer)}}className="trailer2">
+              <div
+                onClick={() => {
+                  window.open(show.trailer);
+                }}
+                className="trailer2"
+              >
                 <i className="fa-solid fa-play"></i> Trailer
               </div>
-              <div className="i" onClick={()=>setMovieInfo(show)}>
+              <div className="i" onClick={() => setMovieInfo(show)}>
                 <i className="fa-solid fa-circle-info"></i>
               </div>
             </div>
@@ -90,19 +99,16 @@ function Moviebox({ moviesAndShows }) {
       {movieInfo && (
         <div className="modal-overlay" onClick={() => setMovieInfo(null)}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="close-btn"
-              onClick={() => setMovieInfo(null)}
-            >
+            <button className="close-btn" onClick={() => setMovieInfo(null)}>
               ✕
             </button>
             <div className="overview">
-            <h1>{movieInfo.title} </h1><br />
-            <span className="data">
-            <p>{movieInfo.overview}</p>
-            </span>
+              <h1>{movieInfo.title} </h1>
+              <br />
+              <span className="data">
+                <p>{movieInfo.overview}</p>
+              </span>
             </div>
-
           </div>
         </div>
       )}

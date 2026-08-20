@@ -176,30 +176,30 @@ body {
 .options p {
   color: #a0a0a0;
 }
-.input-div{
+.input-div {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.input-div input{
+.input-div input {
   width: 80%;
   padding: auto;
-  margin-top :20px;
+  margin-top: 20px;
   height: 40px;
   color: white;
   font-size: 25px;
-  text-align:start;
-  background-color:#121212;
-  border-radius:10px;
+  text-align: start;
+  background-color: #121212;
+  border-radius: 10px;
 }
-.sorry-page{
+.sorry-page {
   margin-top: 30px;
   font-size: 24px;
 }
-.trailer2:hover{
+.trailer2:hover {
   background-color: #104892;
 }
-.trailer2{
+.trailer2 {
   padding: 5px;
   border-radius: 10px;
   transition: 0.5s;
