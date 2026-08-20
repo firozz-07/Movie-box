@@ -109,9 +109,9 @@ body {
   padding: 12px;
   border-radius: 8px;
 }
-.watch-option:hover{
-background-color: #104892;
-color: white;
+.watch-option:hover {
+  background-color: #104892;
+  color: white;
 }
 
 .modal-overlay {
@@ -130,7 +130,7 @@ color: white;
   position: relative;
   width: 350px;
   padding: 25px;
-   background:  #121212;
+  background: #121212;
   color: white;
 
   border-radius: 12px;
@@ -154,26 +154,26 @@ color: white;
 }
 
 .inner-div {
-display: flex;
+  display: flex;
 }
 
-.inner-div img{
-width: 100px;
+.inner-div img {
+  width: 100px;
 }
-.modal-title h2{
-  color: #E0E0E0;
+.modal-title h2 {
+  color: #e0e0e0;
 }
-#star{
-  color: #D4AF37;
+#star {
+  color: #d4af37;
 }
 .modal-title {
-  color: #A0A0A0;
+  color: #a0a0a0;
   margin: 10px;
   line-height: 25px;
 }
-.options h3{
-  color:white;
+.options h3 {
+  color: white;
 }
-.options p{
-  color:#A0A0A0;
+.options p {
+  color: #a0a0a0;
 }

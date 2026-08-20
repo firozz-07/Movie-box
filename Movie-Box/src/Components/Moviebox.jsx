@@ -69,7 +69,9 @@ function Moviebox({ moviesAndShows }) {
                 • {selectedMovie.genre.join(" • ")}
                 <br />
                 <p>
-                  <i className="fa-solid fa-star" id="star"> </i>{" "}
+                  <i className="fa-solid fa-star" id="star">
+                    {" "}
+                  </i>{" "}
                   {selectedMovie.imdbRating}
                 </p>
                 • Creator : {selectedMovie.creator}
@@ -78,7 +80,7 @@ function Moviebox({ moviesAndShows }) {
             <div className="options">
               <h3>Available on:</h3>
               {selectedMovie.watchOptionsIndia.map((platform) => (
-                <p key={platform}>•{platform}</p>
+                <p key={platform}>• {platform}</p>
               ))}
             </div>
           </div>
