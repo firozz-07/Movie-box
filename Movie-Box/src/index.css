@@ -130,8 +130,7 @@ color: white;
   position: relative;
   width: 350px;
   padding: 25px;
-
-  background: #181b24;
+   background:  #121212;
   color: white;
 
   border-radius: 12px;
@@ -160,4 +159,21 @@ display: flex;
 
 .inner-div img{
 width: 100px;
+}
+.modal-title h2{
+  color: #E0E0E0;
+}
+#star{
+  color: #D4AF37;
+}
+.modal-title {
+  color: #A0A0A0;
+  margin: 10px;
+  line-height: 25px;
+}
+.options h3{
+  color:white;
+}
+.options p{
+  color:#A0A0A0;
 }

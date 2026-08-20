@@ -69,7 +69,7 @@ function Moviebox({ moviesAndShows }) {
                 • {selectedMovie.genre.join(" • ")}
                 <br />
                 <p>
-                  <i className="fa-solid fa-star"> </i>{" "}
+                  <i className="fa-solid fa-star" id="star"> </i>{" "}
                   {selectedMovie.imdbRating}
                 </p>
                 • Creator : {selectedMovie.creator}
