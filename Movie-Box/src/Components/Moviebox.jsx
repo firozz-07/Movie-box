@@ -6,7 +6,7 @@ function Moviebox({ moviesAndShows }) {
     <>
       <div className="outer-Div">
         {moviesAndShows.map((show) => (
-          <div key={show.id}>
+          <div key={`${show.type}-${show.id}`}>
             <div className="img">
               <img
                 src={show.coverPicture}
@@ -22,10 +22,12 @@ function Moviebox({ moviesAndShows }) {
               <h1>{show.title}</h1>
               <p>
                 {show.firstSeasonReleaseDate} •{" "}
-                {show.totalSeasons === null
+                {show.type === "Movie"
                   ? "Movie"
-                  : `${show.totalSeasons} Seasons`}{" "}
-                • {show.genre.join(" , ")}
+                  : show.totalSeasons
+                    ? `${show.totalSeasons} Seasons`
+                    : "Web Series"}{" "}
+                • {(show.genre || []).join(" , ")}
               </p>
             </div>
             <div
@@ -38,7 +40,7 @@ function Moviebox({ moviesAndShows }) {
             <div className="trailer">
               <div
                 onClick={() => {
-                  window.open(show.trailer);
+                  if (show.trailer) window.open(show.trailer);
                 }}
                 className="trailer2"
               >
@@ -73,10 +75,13 @@ function Moviebox({ moviesAndShows }) {
                 <h2>{selectedMovie.title}</h2>
                 <p>
                   • {selectedMovie.firstSeasonReleaseDate} {"  "} •{" "}
-                  {selectedMovie.totalSeasons}
-                  {" Seasons"}{" "}
+                  {selectedMovie.type === "Movie"
+                    ? "Movie"
+                    : selectedMovie.totalSeasons
+                      ? `${selectedMovie.totalSeasons} Seasons`
+                      : "Web Series"}{" "}
                 </p>
-                • {selectedMovie.genre.join(" • ")}
+                • {(selectedMovie.genre || []).join(" • ")}
                 <br />
                 <p>
                   <i className="fa-solid fa-star" id="star">
@@ -89,7 +94,7 @@ function Moviebox({ moviesAndShows }) {
             </div>
             <div className="options">
               <h3>Available on:</h3>
-              {selectedMovie.watchOptionsIndia.map((platform) => (
+              {(selectedMovie.watchOptionsIndia || []).map((platform) => (
                 <p key={platform}>• {platform}</p>
               ))}
             </div>
